@@ -9,15 +9,14 @@ else:
    factor = 3
    factorMax = n ** 0.5
    while n > 1 and factor <= factorMax:
-     if n % factor == 0:
-        n = n / factor
-        lastFactor = factor
-        while n % factor == 0:
+       while n % factor == 0:
           n = n / factor
-        factorMax = n ** 0.5
-        factor = factor + 2 
+       factorMax = n ** 0.5
+       factor = factor + 2 
 if n == 1:
     print(lastFactor)
 else:
     print(n)
-          
+
+        
+       
